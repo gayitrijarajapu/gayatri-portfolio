@@ -10,7 +10,7 @@ const Footer = () => (
         </div>
 
         <p className="footer-desc">
-          Building practical AI/ML and full stack products that solve real-world problems.
+          Computer Science undergraduate building practical AI/ML and full-stack products.
         </p>
 
         <div className="footer-socials">
@@ -35,8 +35,8 @@ const Footer = () => (
     </div>
 
     <div className="container footer-bottom-row">
-      <p>© 2026 Gayatri Jarajapu | All Rights Reserved</p>
-      <p>Makavarapalem, Andhra Pradesh | Contact: 7207258450</p>
+      <p>© 2026 Gayatri Jarajapu</p>
+      <p>Vizianagaram, Andhra Pradesh | Contact: +91 9346614859</p>
     </div>
   </footer>
 );

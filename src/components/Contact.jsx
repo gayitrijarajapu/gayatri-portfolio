@@ -6,8 +6,8 @@ const Contact = () => {
       <div className="container contact-container">
         <h2 className="contact-heading">Let&apos;s Connect</h2>
         <p className="contact-intro">
-          Open to internship opportunities in AI/ML and software development.
-          Send a message and let&apos;s build something meaningful together.
+          Based in Vizianagaram, Andhra Pradesh, India. Open to AI/ML,
+          data science, and full-stack development opportunities.
         </p>
         <form
           className="contact-form"

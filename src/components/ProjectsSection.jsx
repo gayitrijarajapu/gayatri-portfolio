@@ -17,20 +17,21 @@ const projectCards = [
     stars: 4,
   },
   {
-    title: 'AI Image Caption Generator',
-    description: 'An intelligent captioning platform blending vision, language generation, translation, and text-to-speech for highly accessible storytelling.',
+    title: 'Automatic Image Caption Generator',
+    description: 'Developed an AI-powered image captioning application using YOLOv8 for object detection and BLIP for caption generation, with multilingual translation, text-to-speech, object counting, and image upload in an interactive Streamlit app.',
     type: 'Multimodal AI',
-    metric: '12 sec avg inference',
-    tags: ['YOLO', 'BLIP', 'TTS'],
+    metric: 'Captioning + TTS',
+    tags: ['Python', 'YOLOv8', 'BLIP', 'Streamlit', 'gTTS'],
     icon: <LuBrain strokeWidth={1.8} />,
     stars: 5,
+    url: 'https://automatic-image-caption-generator.streamlit.app/',
   },
   {
     title: 'AI-Powered Document Analysis & RAG Platform - DocuMind AI',
-    description: 'Built a full-stack AI application for PDF upload, AI-powered summarization, information extraction, and RAG-based question answering with AI chat and page-level source references.',
+    description: 'Built a full-stack AI application for PDF upload, AI-powered summarization, information extraction, and RAG-based question answering. Developed FastAPI APIs with PostgreSQL, integrated Gemini and FAISS for document retrieval, and created a React dashboard with AI chat and page-level source references.',
     type: 'DocuMind AI',
     metric: 'RAG Q&A with sources',
-    tags: ['React', 'FastAPI', 'Gemini', 'RAG', 'FAISS', 'PostgreSQL'],
+    tags: ['React', 'Python', 'FastAPI', 'Gemini', 'FAISS', 'PostgreSQL'],
     icon: <LuFileSearch strokeWidth={1.8} />,
     stars: 5,
   },
@@ -296,8 +297,21 @@ const ProjectsSection = () => {
               {projectCards.map((project, index) => (
                 <article
                   key={project.title}
-                  className="project-card-premium"
+                  className={`project-card-premium${project.url ? ' is-clickable' : ''}`}
                   role="listitem"
+                  tabIndex={project.url ? 0 : undefined}
+                  aria-label={project.url ? `${project.title}. Open deployed project.` : undefined}
+                  onClick={() => {
+                    if (project.url) {
+                      window.open(project.url, '_blank', 'noopener,noreferrer');
+                    }
+                  }}
+                  onKeyDown={(event) => {
+                    if (project.url && (event.key === 'Enter' || event.key === ' ')) {
+                      event.preventDefault();
+                      window.open(project.url, '_blank', 'noopener,noreferrer');
+                    }
+                  }}
                 >
                   <div className="project-card-header">
                     <h3>{project.title}</h3>

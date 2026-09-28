@@ -203,6 +203,15 @@
     0 26px 56px rgba(14, 10, 24, 0.58);
 }
 
+.project-card-premium.is-clickable {
+  cursor: pointer;
+}
+
+.project-card-premium.is-clickable:focus-visible {
+  outline: 2px solid rgba(246, 211, 107, 0.86);
+  outline-offset: 6px;
+}
+
 .project-card-header {
   display: flex;
   align-items: flex-start;

@@ -6,10 +6,9 @@ import '../styles/about.css';
 gsap.registerPlugin(ScrollTrigger);
 
 const aboutLines = [
-  'I am a final-year Computer Science student focused on AI/ML and full stack development.',
-  'I build practical products using Python, FastAPI, React.js, and PostgreSQL.',
-  'My projects include plant disease classification and AI-powered image caption generation.',
-  'I enjoy transforming complex ideas into elegant, usable experiences with real-world impact.',
+  'Passionate Computer Science undergraduate with a strong interest in AI/ML and full-stack development.',
+  'Eager to explore emerging technologies and apply new ideas to build meaningful, user-focused solutions.',
+  'Self-motivated, adaptable, and committed to continuous growth through hands-on projects and challenges.',
 ];
 
 const AboutSection = () => {

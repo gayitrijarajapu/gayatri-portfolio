@@ -17,9 +17,10 @@ const Hero = () => {
           <h1>Gayatri Jarajapu</h1>
           <h2>AI/ML Enthusiast and Full Stack Developer building real-world applications.</h2>
           <p className="lead">
-            I work with Python, FastAPI, React.js, and PostgreSQL to create
-            scalable products and intelligent systems. I enjoy solving practical
-            problems with machine learning and continuously improving my skills.
+            Passionate Computer Science undergraduate with a strong interest in
+            AI/ML and full-stack development. I enjoy exploring emerging
+            technologies and applying new ideas to build meaningful,
+            user-focused solutions.
           </p>
           <div className="hero-cta">
             <a className="btn hero-view-btn" href="#projects">

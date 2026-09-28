@@ -5,14 +5,15 @@ const About = () => {
         <div className="about-card">
           <h2>About Me</h2>
           <p className="section-intro">
-            I am a final-year Computer Science student with a strong interest in
-            AI/ML and Full Stack Development. I have hands-on experience building
-            machine learning models and developing real-world applications.
+            I am a Computer Science undergraduate with a strong interest in
+            AI/ML and full-stack development. I enjoy exploring emerging
+            technologies and applying new ideas to build meaningful,
+            user-focused solutions.
           </p>
           <ul className="about-highlights">
-            <li>Developed AI/ML projects like plant disease classification and AI image caption generation.</li>
-            <li>Built full stack applications using Python, FastAPI, React.js, and PostgreSQL.</li>
-            <li>Applies machine learning and deep learning techniques to solve practical real-world problems.</li>
+            <li>Computer Science and Engineering, Avanthi Institute of Engineering and Technology, expected graduation 2027.</li>
+            <li>Data Science Intern at Embrizon Technologies, May 2026 to June 2026.</li>
+            <li>Built AI/ML and full-stack projects using Python, FastAPI, React, PostgreSQL, Gemini, FAISS, and RAG workflows.</li>
           </ul>
         </div>
       </div>
