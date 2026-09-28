@@ -1,0 +1,124 @@
+.skills-horizontal {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 120px 0 88px;
+}
+
+.skills-hero {
+  width: min(1100px, 92%);
+  margin: 0 auto 30px;
+}
+
+.skills-overline {
+  margin: 0 0 10px;
+  color: #c89dff;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.skills-hero h2 {
+  margin: 0;
+  font-size: clamp(2.2rem, 7vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.skills-heading-left {
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.skills-heading-accent {
+  color: #d5b1ff;
+  text-shadow:
+    0 0 16px rgba(168, 85, 247, 0.52),
+    0 0 32px rgba(76, 29, 149, 0.38);
+}
+
+.skills-hero p {
+  margin: 10px 0 0;
+  color: #d9d0ef;
+  max-width: 640px;
+}
+
+.skills-track-wrap {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.skills-track {
+  display: flex;
+  gap: 24px;
+  padding: 14px 4vw 14px 4vw;
+  will-change: transform;
+}
+
+.skills-panel {
+  flex: 0 0 clamp(220px, 24vw, 340px);
+  min-height: clamp(220px, 32vh, 300px);
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background:
+    linear-gradient(160deg, rgba(192, 132, 252, 0.2), rgba(36, 17, 68, 0.3)),
+    rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 44px rgba(10, 5, 24, 0.28);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: rotate(calc((var(--i) - 4) * 0.7deg));
+  transition: transform 300ms ease, border-color 300ms ease;
+}
+
+.skills-panel:hover {
+  transform: rotate(0deg) scale(1.03);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.skills-index {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
+}
+
+.skills-panel h3 {
+  margin: 10px 0 0;
+  color: #f8f3ff;
+  font-size: clamp(1.35rem, 2.1vw, 1.95rem);
+  font-weight: 600;
+}
+
+.skills-content p {
+  margin: 10px 0 0;
+  color: #ddd1f2;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.skills-icon {
+  font-size: 2.1rem;
+  color: #d9b2ff;
+}
+
+@media (max-width: 1023px) {
+  .skills-horizontal {
+    padding: 190px 0 72px;
+  }
+
+  .skills-track {
+    gap: 16px;
+    padding: 8px 5vw;
+  }
+
+  .skills-panel {
+    flex-basis: 72vw;
+    min-height: 220px;
+    border-radius: 22px;
+  }
+}
